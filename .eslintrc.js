@@ -14,5 +14,9 @@ module.exports = {
   },
   rules: {
     'no-var': 0,
+    "linebreak-style": ["error", "windows"],
+    quotes: ["error", "double"],
+    "no-multiple-empty-lines": 0,
+    "prefer-template": 0,
   },
 };
