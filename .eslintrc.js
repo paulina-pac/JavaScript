@@ -18,5 +18,8 @@ module.exports = {
     quotes: ["error", "double"],
     "no-multiple-empty-lines": 0,
     "prefer-template": 0,
+    "vars-on-top": 0,
+    "no-unused-expressions": 0,
+    "spaced-comment": 0,
   },
 };
