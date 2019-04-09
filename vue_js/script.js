@@ -72,4 +72,20 @@ var myLocation = "room", myOtherlocation = "bathroom";
 myLocation === myOtherlocation;
 
 
+// ------------------------------------------ OBJECTS ARRAYS AND MORE  -----------------------------------------
+
+{} 
+
+// that is an empty object
+
+
+var myEmptyObject = {};
+
+var notEmptyObject = {
+  "name": "Pauline",
+  "age": 21,
+  "is she hot?": true,
+};
+
+
 
