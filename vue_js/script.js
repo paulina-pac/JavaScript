@@ -88,4 +88,42 @@ var notEmptyObject = {
 };
 
 
+// ------------------------------------------ OBJECTS for MODELING DATA  -----------------------------------------
 
+var human = {
+
+  eyes: "blue",
+  legs: "two",
+  head: "one",
+  messedup: true,
+  averageChildren: 3
+};
+
+var bear = {
+  genus: "ursus",
+  species: "arctos",
+  commonName: "brown bear",
+  noisy: true,
+  deadly: true
+};
+
+
+// ------------------------------------------ MANIPULATING OBJECTS  ----------------------------------------
+
+// If I want to inspect the object and find out what one of its properties is, 
+// here's how I can do that. I can type the variable name and then a dot. 
+
+human.head
+human.eyes
+
+human["head"];
+
+bear.color = "black";
+
+bear["accomodation"] = "forest";
+
+
+delete bear.color;
+
+
+// ------------------------------------------ REFERENCES & OBJECTS  ----------------------------------------
