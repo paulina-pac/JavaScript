@@ -19,10 +19,10 @@ var app = new Vue({
 
 // ------------------------------------------ JS VARIABLES and TYPES -----------------------------------------
 
-var box = "blue", 
-smallBox = "smallie", 
-tinyBox = "tiny", 
-longBox = "longie";
+var box = "blue",
+  smallBox = "smallie",
+  tinyBox = "tiny",
+  longBox = "longie";
 
 // ------------------------------------------ JS VARIABLES and TYPES -----------------------------------------
 
@@ -74,7 +74,7 @@ myLocation === myOtherlocation;
 
 // ------------------------------------------ OBJECTS ARRAYS AND MORE  -----------------------------------------
 
-{} 
+{ }
 
 // that is an empty object
 
@@ -138,7 +138,7 @@ var myArray = [0, 1, 2, 3, "string", true, false]
 
 var daysOfTheWeek = ["monday", "tuesday", "wednesday", "thursday", "friday", "Saturday", "Sunday"];
 
-var ArrayOfStuff = [ myArray, daysOfTheWeek];
+var ArrayOfStuff = [myArray, daysOfTheWeek];
 
 // ------------------------------------------ Manipulating ARRAYS  ----------------------------------------
 
@@ -172,3 +172,6 @@ delete cities[2];
 // !WILL RESULT WITH DELETING THE item BUT it will leave the space EMPTY !!!!
 
 
+cities.splice(2, 1);
+
+//this will remove the item from the list completely
