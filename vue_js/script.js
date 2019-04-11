@@ -127,3 +127,48 @@ delete bear.color;
 
 
 // ------------------------------------------ REFERENCES & OBJECTS  ----------------------------------------
+
+var human2 = human;
+
+// !This will give 2 variables that will point to the same values!!! CAREFUL
+
+// ------------------------------------------ ARRAYS  ----------------------------------------
+
+var myArray = [0, 1, 2, 3, "string", true, false]
+
+var daysOfTheWeek = ["monday", "tuesday", "wednesday", "thursday", "friday", "Saturday", "Sunday"];
+
+var ArrayOfStuff = [ myArray, daysOfTheWeek];
+
+// ------------------------------------------ Manipulating ARRAYS  ----------------------------------------
+
+var cities = [
+  'milan',
+  'paris',
+  'london',
+  'berlin',
+  'new york'
+];
+
+cities[0];
+
+cities[2] = "new york"
+
+cities[cities.length] = "warsaw"
+
+// cities.length adds to the list
+
+cities.push("Cracow");
+
+// PUSH ADDS SOMETHING TO THE END OF THE LIST
+
+cities.pop("warsaw");
+
+// REMOVES ITEM FROM THE LIST
+
+
+delete cities[2];
+
+// !WILL RESULT WITH DELETING THE item BUT it will leave the space EMPTY !!!!
+
+
