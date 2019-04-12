@@ -175,3 +175,120 @@ delete cities[2];
 cities.splice(2, 1);
 
 //this will remove the item from the list completely
+
+
+
+// ------------------------------------------ REGULAR EXPRESSIONS  ----------------------------------------
+
+var string1 = "This is bullshit";
+var string2 = "This is not bullshit";
+var string3 = "This is serious";
+var string4 = "this is ok. I was just kidding";
+
+var regex = /this/; 
+
+// looks for the exact word in the string
+
+console.log( regex.test(string1) );
+console.log( regex.test(string2) );
+console.log( regex.test(string3) );
+console.log( regex.test(string4) );
+
+
+var regex = /this/i; 
+
+// looks for the  word in the string case INSENSITIVE , hence i
+
+
+
+console.log( regex.test(string1) );
+console.log( regex.test(string2) );
+console.log( regex.test(string3) );
+console.log( regex.test(string4) );
+
+
+var regex = /^this/i; 
+
+// looks for the  word in the string AT THE BEGGINING case INSENSITIVE , hence i
+
+
+
+var string1 = "This is bullshit";
+var string2 = "This is not bullshit";
+var string3 = "This is serious";
+var string4 = "this is ok. I was just kidding";
+
+console.log( regex.test(string1) );
+console.log( regex.test(string2) );
+console.log( regex.test(string3) );
+console.log( regex.test(string4) );
+
+
+var regex = /this$/i; 
+
+// looks for the word in the string AT THE END case INSENSITIVE , hence i
+
+
+
+
+// ------------------------------------------ SIMPLE COMPARISONS  ----------------------------------------
+
+var one = 1, two = 2;
+
+one === one
+one === two
+
+one == one 
+
+// == also checks aquality but its not very strict
+
+one == 1 
+
+//will result in true for ==
+
+one !== one ;
+
+// !== means NOT IDENTICAL
+
+one > two;
+
+one >= two;
+
+
+// ------------------------------------------ ARTHIMETIC OPERATORS  ----------------------------------------
+
+BASIC OPERATORS
+
++
+-
+/
+*
+
+2 + 2;
+6 / 2;
+4 - 2;
+2 * 2;
+20 % 2;
+// % determines if the number is even or odd
+
+ var counter = 0;
+
+ counter = counter + 1;
+
+ counter += 1
+
+ //same as counter = counter + 1 but shorter
+
+ counter -= 1;
+
+ counter--;
+
+ counter *= 2;
+
+ "cat" + "dog";
+
+ // will add those strings "cat dog"
+
+ 
+
+
