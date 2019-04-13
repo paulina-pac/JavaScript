@@ -185,29 +185,29 @@ var string2 = "This is not bullshit";
 var string3 = "This is serious";
 var string4 = "this is ok. I was just kidding";
 
-var regex = /this/; 
+var regex = /this/;
 
 // looks for the exact word in the string
 
-console.log( regex.test(string1) );
-console.log( regex.test(string2) );
-console.log( regex.test(string3) );
-console.log( regex.test(string4) );
+console.log(regex.test(string1));
+console.log(regex.test(string2));
+console.log(regex.test(string3));
+console.log(regex.test(string4));
 
 
-var regex = /this/i; 
+var regex = /this/i;
 
 // looks for the  word in the string case INSENSITIVE , hence i
 
 
 
-console.log( regex.test(string1) );
-console.log( regex.test(string2) );
-console.log( regex.test(string3) );
-console.log( regex.test(string4) );
+console.log(regex.test(string1));
+console.log(regex.test(string2));
+console.log(regex.test(string3));
+console.log(regex.test(string4));
 
 
-var regex = /^this/i; 
+var regex = /^this/i;
 
 // looks for the  word in the string AT THE BEGGINING case INSENSITIVE , hence i
 
@@ -218,13 +218,13 @@ var string2 = "This is not bullshit";
 var string3 = "This is serious";
 var string4 = "this is ok. I was just kidding";
 
-console.log( regex.test(string1) );
-console.log( regex.test(string2) );
-console.log( regex.test(string3) );
-console.log( regex.test(string4) );
+console.log(regex.test(string1));
+console.log(regex.test(string2));
+console.log(regex.test(string3));
+console.log(regex.test(string4));
 
 
-var regex = /this$/i; 
+var regex = /this$/i;
 
 // looks for the word in the string AT THE END case INSENSITIVE , hence i
 
@@ -238,15 +238,15 @@ var one = 1, two = 2;
 one === one
 one === two
 
-one == one 
+one == one
 
 // == also checks aquality but its not very strict
 
-one == 1 
+one == 1
 
 //will result in true for ==
 
-one !== one ;
+one !== one;
 
 // !== means NOT IDENTICAL
 
@@ -257,12 +257,12 @@ one >= two;
 
 // ------------------------------------------ ARTHIMETIC OPERATORS  ----------------------------------------
 
-BASIC OPERATORS
+// BASIC OPERATORS
 
-+
--
-/
-*
+// +
+// -
+// /
+// *
 
 2 + 2;
 6 / 2;
@@ -271,24 +271,130 @@ BASIC OPERATORS
 20 % 2;
 // % determines if the number is even or odd
 
- var counter = 0;
+var counter = 0;
 
- counter = counter + 1;
+counter = counter + 1;
 
- counter += 1
+counter += 1
 
- //same as counter = counter + 1 but shorter
+//same as counter = counter + 1 but shorter
 
- counter -= 1;
+counter -= 1;
 
- counter--;
+counter--;
 
- counter *= 2;
+counter *= 2;
 
- "cat" + "dog";
+"cat" + "dog";
 
- // will add those strings "cat dog"
-
- 
+// will add those strings "cat dog"
 
 
+// ------------------------------------------ LOGICAL OPERATORS  ----------------------------------------
+
+// *&& is AND || is OR and ! is NOT eg. !TRUE  (not true)
+
+var animal1 = "fox";
+var animal2 = "cow";
+var animal3 = "crow";
+
+animal1 === 'fox' && animal2 === 'cow';
+
+
+
+// ------------------------------------------ CONDITIONALS IF  ----------------------------------------
+
+
+var answer = window.confirm("click OK, get true. Click Cancel, and be false.");
+
+if (answer === true) {
+  console.log("you said True!");
+
+}
+
+if (answer === true) {
+  console.log("U said true and it is!");
+} else {
+  console.log("You clicked something else");
+}
+
+var answer1 = window.prompt("type in YES, NO, or MAYBE. Then click OK.");
+
+if (answer1 === "YES") {
+  console.log("You said YES!");
+} else if (answer1 === "MAYBE") {
+  console.log("You said maybe. I don't know what now");
+} else if (answer1 === "NO") {
+  console.log("You siad no. :(");
+} else {
+  console.log("You're quite a rebel!");
+}
+
+// ------------------------------------------ CONDITIONALS SWITCH  ----------------------------------------
+
+
+switch (answer1) {
+  case "YES":
+    console.log("you've just wrote YES");
+    break;
+  case "MAYBE":
+    console.log("You've just wrote MAYBE");
+    break;
+  case "NO":
+    console.log("you've just wrote NO");
+    break;
+  default:
+    console.log("you're weird");
+    break;
+}
+
+// ------------------------------------------ IFs SHORTER  ----------------------------------------
+
+var man = "Joe";
+
+if (man === "Joe") {
+  console.log("How you dooooooing?");
+} else {
+  console.log("The man has no face");
+}
+
+var need = "dollars",
+  got = "nothing",
+  cryAboutIt = true;
+
+if (need === got) {
+  console.log("horay! hooray it's a jolly jolly day!");
+  cryAboutIt = true;
+} else {
+  console.log("F@#$ my life");
+  cryAboutIt = false;
+}
+
+if (cryAboutIt) {
+  console.log("Child says: wth?");
+}
+
+if (!cryAboutIt) {
+  console.log("Pheeew!");
+}
+
+// ------------------------------------------ TERNARY OPERATORS ----------------------------------------
+
+var woman = "Eve";
+
+woman === "Eve"
+
+  ? console.log("Girl, you'll be a woman soon")
+  : console.log("The paradise is safe.");
+
+
+var job = (woman === "Eve") ? ("The first one") : ("We're not in trouble");
+
+// ------------------------------------------ CHECKING THA TYPE OF THE variable ----------------------------------------
+
+
+var thing = 12;
+
+// thing = "twelve";
+
+typeof thing
