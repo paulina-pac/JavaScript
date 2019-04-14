@@ -398,3 +398,89 @@ var thing = 12;
 // thing = "twelve";
 
 typeof thing
+
+
+// ------------------------------------------ LOOPS ----------------------------------------
+
+for (var i = 0; i < 10; i += 1) {
+
+  console.log(i);
+
+}
+
+
+var pageNames = [
+  "Home",
+  "About Us",
+  "Contact Us",
+  "JavaScript Playground",
+  "News",
+  "Blog"
+];
+
+for (i = 0; i < pageNames.length; i += 1) {
+  if (document.title === pageNames[i]) {
+    console.log("we are here: " + pageNames[i]);
+
+  } else {
+    console.log("we are not here: " + pageNames[i]);
+  }
+}
+
+
+
+var pageNames = [
+  "Home",
+  "About Us",
+  "Contact Us",
+  "JavaScript Playground",
+  "News",
+  "Blog"
+];
+
+for (var p in pageNames) {
+  console.log(p, pageNames[p]);
+}
+
+
+
+
+// for (var p in pages) {
+//   if (pages.hasOwnProperty(p)) {
+//     console.log(p, pageNames[p]);
+//   }
+// }
+
+// ------------------------------------------WHILE  LOOPS ----------------------------------------
+
+
+var i = 0;
+while (i < 10) {
+  console.log(i + "... This will go until we hit 10");
+  i += 1;
+}
+
+
+
+var myItem = false;
+do {
+  console.log(
+    "maArray has " + myArray.length +
+    "items now. This loop will go until we pop a false"
+  );
+
+  myItem = myArray.pop();
+
+} while (myItem !== false);
+
+
+// ------------------------------------------FUNCTIONS ----------------------------------------
+
+
+
+
+
+console.log("Hi");
+console.log("What up?");
+console.log("How you doing?");
+console.log("howdy!");
