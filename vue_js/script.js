@@ -484,3 +484,51 @@ console.log("Hi");
 console.log("What up?");
 console.log("How you doing?");
 console.log("howdy!");
+
+
+function speak() {
+  console.log("hi");
+  console.log("What up?");
+  console.log("How you doing?");
+  console.log("howdy!");
+}
+
+speak();
+
+
+// !------------------------------------------ARGUMENTS IN FUNCTIONS ----------------------------------------
+
+fuddify("rabbit tracks!");
+
+function fuddify(speech) {
+if (typeof speech !=="string") {
+  console.error("nice twy, awsehole!");
+  return;
+}
+
+speech = speech.replace(/r/g, "w");
+speech = speech.replace(/R/g, "w");
+
+return speech;
+
+
+}
+
+
+var utterance = fuddify("You screwy rabbit!");
+utterance;
+
+function isEven(num) {
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+} 
+
+function isEven(num) {
+  return num % 2 === 0;
+}
+
+12 % 2;
+isEven(44);
