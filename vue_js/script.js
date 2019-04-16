@@ -532,3 +532,22 @@ function isEven(num) {
 
 12 % 2;
 isEven(44);
+
+
+
+// !------------------------------------------MORE ON ARGUMENTS ----------------------------------------
+
+
+function speakSomething(what, howMany) {
+
+  var what = (typeof what !== "undefined") ? what : "Default speech";
+  var howMany = (typeof howMany !== "undefined") ? howMany : 10;
+
+  for (var i = 0; i < howMany; i += 1) {
+    console.log(what + " (" + i +")"); 
+  }
+
+}
+
+
+speakSomething("hey yooo!");
