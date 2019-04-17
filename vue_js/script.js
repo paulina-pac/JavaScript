@@ -551,3 +551,49 @@ function speakSomething(what, howMany) {
 
 
 speakSomething("hey yooo!");
+
+
+
+//------------------------------------------OBJECTS , REFERENCES AND FUNCTIONS ----------------------------------------
+
+var calvin = {
+  name: "calvin",
+  bestFriend: "hobbes",
+  form: "human boy"
+};
+
+
+function transmogrifier(calvin) {
+  if (typeof calvin !== "object") {
+    console.error("argument is of the wrong type");
+    return;
+  }
+
+  var randomNumber = Math.floor(Math.random() *5) + 1;
+
+  switch ( randomNumber ) {
+    case 1:
+    calvin.form = "tyrannosaurus";
+    break;
+    case 2:
+    calvin.form = "grey wolf";
+    break;
+    case 3:
+    calvin.form = "bengal tiger";
+    break;
+    case 4:
+    calvin.form = "grizzly bear";
+    break;
+    case 5:
+    calvin.form = "canary";
+    break;
+    default: 
+    calvin.form = "human boy"
+    break;
+  }
+}
+
+transmogrifier(calvin)
+
+
+// ------------------------------------------ FUNCTIONS & OBJECTS ----------------------------------------
