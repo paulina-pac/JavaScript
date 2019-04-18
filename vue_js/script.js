@@ -597,3 +597,54 @@ transmogrifier(calvin)
 
 
 // ------------------------------------------ FUNCTIONS & OBJECTS ----------------------------------------
+
+var speakNow = function(what) {
+  what = what || "Speaking";
+
+  for (var i = 0; i < 10; i += 1) {
+    console.log(what);
+  }
+};
+
+window.setTimeout(speakNow, 5000);
+
+
+var obj = {
+  sayHello: function() {
+    console.log("Hello");
+  }
+};
+
+obj.sayHello();
+
+
+// ------------------------------------------ JARGON ? ----------------------------------------
+
+// *Scope refers to where variables are defined and what parts of our code can access the variables we define. 
+// *Often when we talk about scope, we differentiate between global scope and local scope.
+
+// Global refers to variables that are defined in such a way that they're accessible anywhere. 
+// Local means that a variable is accessible in a way that's more limited, perhaps only inside a particular function. 
+
+// !Try to avoid creaing global variables!
+
+
+var myNum = 32;
+var myResult = "success!";
+
+function randomizer(limit) {
+  var randomNumber = Math.floor(Math.random() * limit);
+
+  var myNum = randomNumber;
+
+  console.log("myNum is", myNum);
+  console.log("Global myNum is", window.myNum);
+
+  console.log("our result is", myResult);
+
+  return myNum;
+
+}
+
+randomizer(10);
+
